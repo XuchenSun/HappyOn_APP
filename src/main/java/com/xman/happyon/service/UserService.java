@@ -22,7 +22,7 @@ public class UserService {
         userList.addAll(Arrays.asList(user1,user2,user3,user4));
     }
 
-    public Optional<User> getUser(Integer id) {
+    public Optional getUser(Integer id) {
         Optional optional = Optional.empty();
         for (User user : userList) {
             if (id == user.getId()) {
